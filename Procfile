@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.masterservice.controller
+web: sh target/bin/webapp
