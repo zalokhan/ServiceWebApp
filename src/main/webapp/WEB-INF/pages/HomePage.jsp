@@ -31,13 +31,20 @@ div.site-wrapper {
 	-webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 	box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 }
+	
+.form-signin {
+	max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
 </style>
 
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Master Service WebApp</a>
+				<a class="navbar-brand" href="/">Master Service WebApp</a>
 			</div>
 		</div>
 	</nav>
@@ -46,32 +53,31 @@ div.site-wrapper {
 		<div class="site-wrapper">
 			<div class="container">
 
-				<div class="row">
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>ABC</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details</a>
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>ABC</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details</a>
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>ABC</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details</a>
-						</p>
-					</div>
+				<div class="container">
+
+					<form class="form-signin">
+						<h2 class="form-signin-heading">Please sign in</h2>
+						
+						<label for="inputEmail" class="sr-only">Email address</label>
+						<input
+							type="email" id="inputEmail" class="form-control"
+							placeholder="Email address" required="" autofocus=""> 
+							<label
+							for="inputPassword" class="sr-only">Password</label> 
+							<input
+							type="password" id="inputPassword" class="form-control"
+							placeholder="Password" required="" vk_13502="subscribed">
+						<div class="checkbox">
+							<label> <input type="checkbox" value="remember-me">
+								Remember me
+							</label>
+						</div>
+						<button class="btn btn-lg btn-primary btn-block" type="submit">Sign
+							in</button>
+					</form>
+
 				</div>
+
 			</div>
 		</div>
 
