@@ -21,11 +21,11 @@ public class RegisterServlet extends HttpServlet {
         String emailAddress = request.getParameter("emailAddress");
         String password = request.getParameter("password");
         if ((emailAddress.equals("test@test.com")) && (password.equals("VishZee"))) {
-            System.out.println("Success");
             request.getRequestDispatcher("success").forward(request, response);
             return;
         }
-        else { 
+        else {
+            request.getRequestDispatcher("failure").forward(request, response);
             return;
         }
     }
