@@ -30,7 +30,7 @@ public class BaseController {
         model.addAttribute("message", "Welcome " + name);
         model.addAttribute("counter", ++counter);
         logger.debug("[welcomeName] counter : {}", counter);
-        return VIEW_INDEX;
+        return homePageView;
 
     }
 }
