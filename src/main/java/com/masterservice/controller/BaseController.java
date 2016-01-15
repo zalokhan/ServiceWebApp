@@ -32,11 +32,20 @@ public class BaseController {
     }
     
     @RequestMapping(value = "/success", method = RequestMethod.POST)
-    public String register(ModelMap model) {
+    public String registerSuccess(ModelMap model) {
 
         model.addAttribute("message", "Welcome");
 
         return "Success";
+
+    }
+    
+    @RequestMapping(value = "/failure", method = RequestMethod.POST)
+    public String registerFailure(ModelMap model) {
+
+        model.addAttribute("message", "Welcome");
+
+        return "Failure";
 
     }
 
