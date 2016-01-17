@@ -25,8 +25,6 @@ public class BaseController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String welcome(ModelMap model) {
 
-        model.addAttribute("message", "Welcome");
-
         return homePageView;
 
     }
