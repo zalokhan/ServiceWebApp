@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- Stock business object -->
+   <bean id="userDataBo" class="com.masterservice.controller.UserDataBoAdapter" >
+   		<property name="userDataDao" ref="userDataDao" />
+   </bean>
+ 
+   <!-- Stock Data Access Object -->
+   <bean id="userDataDao" class="com.masterservice.controller.UserDataDaoAdapter" >
+   		<property name="sessionFactory" ref="sessionFactory"></property>
+   </bean>
+   
+</beans>

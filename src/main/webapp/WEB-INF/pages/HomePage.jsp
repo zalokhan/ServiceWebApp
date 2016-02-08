@@ -1,6 +1,5 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<jsp:include page="/WEB-INF/pages/Styles.jsp" />
 
 <jsp:include page="/WEB-INF/pages/Header.jsp" />
 
@@ -10,7 +9,7 @@
 
 			<div class="container">
 
-				<form class="form-signin" action="register" method="post">
+				<form class="form-signin" action="login" method="post">
 					<h2 class="form-signin-heading">Sign In</h2>
 
 					<label for="inputEmail" class="sr-only">Email address</label> <input

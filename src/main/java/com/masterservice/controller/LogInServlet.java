@@ -8,12 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "RegisterServlet", urlPatterns = { "/register" })
-public class RegisterServlet extends HttpServlet {
+@WebServlet(name = "LogInServlet", urlPatterns = { "/login" })
+public class LogInServlet extends HttpServlet {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = -6154717887906291896L;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

@@ -1,4 +1,5 @@
-body {
+<style>
+body.global-body {
 	background-color: #333;
 	color: #fff;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
@@ -23,3 +24,4 @@ div.site-wrapper {
 	padding: 15px;
 	margin: 0 auto;
 }
+</style>
